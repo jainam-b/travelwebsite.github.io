@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Holic</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="Home logo.png">
+    <link rel="stylesheet" href="featured_images.html">
+</head>
+<body>
+    <header>
+        <a href="new1.html" class="title"><img src="Home logo.png" alt=""> Travelholic</a>
+        <div class="navbar">
+            <div class="navbar-items">
+                <a href="index.html">Home</a>
+                <a href="Tours.html" target="_blank">Tours</a>
+                <a href="Review.html" target="_self">Review</a>
+                <a href="About.html">About</a>
+                <a href="Book.html">Book Online</a>
+                <a href="SignUp.html">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <!-- End of Navbar -->
+    <section class="Home">
+        <video class="video-slide active" src="Home1.mp4" autoplay muted loop ></video>
+        <video class="video-slide" src="Home2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Home3.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="Home4.mp4" autoplay muted loop></video>
+        <div class="content active">
+        </div>
+        <dIv class="slider-navbar">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </dIv> 
+    </section>
+    <div class="quotes"> 
+        <div class="box box1">    
+          
+        <!-- <section> -->
+           
+    <script>
+        // javascript for video slider navbar
+        const btns=document.querySelectorAll(".nav-btn");
+        const slides=document.querySelectorAll(".video-slide");
+        const contents=document.querySelectorAll(".content");
+
+        var sliderNav= function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) =>{
+            btn.addEventListener("click",( )=>{
+                sliderNav(i);
+            });
+        });
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
